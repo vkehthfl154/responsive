@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+
+#wrap{width: 100%; margin: 0 auto;}
+header{background: #293462; height: 150px;}
+aside{
+	float: left;
+	background: #F24C4C; height: 700px; width: 30%;}
+section{
+	float: left;
+	background: #EC9B3B; height: 700px; width: 40%;}
+article{
+	float: left;
+	background: #F7D716; height: 700px; width: 30%;}
+footer{
+	clear:both;
+	background: #FCF69C; width: 100%; height: 150px;}
+
+
+/* 화면의 넓이가 0~1200px */
+@media(max-width: 1200px){
+	aside{width: 40%;}
+	section{width: 60%;}
+	article{width: 100%; height: 300px;}
+}
+
+@media(max-width: 768px){
+	aside{width: 100%;}
+	section{width: 100%;}
+}
+
+@media(max-width: 480px){
+	header{height: 300px;}
+	aside{height: 300px;}
+	section{height: 300px;}
+}
